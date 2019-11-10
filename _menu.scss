@@ -1,0 +1,111 @@
+.menu {
+  background: $red;
+  padding: 30px 50px;
+  font-size: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 5;
+  @include mq(0, 600px) {
+    padding-left: 10px;
+  }
+  img {
+    width: 110px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  nav {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    ul {
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+      padding: 0 10px 0 10px;
+      @include mq(0, 800px) {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: $darkblue;
+        line-height: 2.5;
+      }
+      @include mq(0, 600px) {
+        line-height: 3.5;
+      }
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        @include mq(0, 600px) {
+          margin-right: 15px;
+        }
+        a {
+          font-size: 20px;
+          letter-spacing: 0.06em;
+          color: $white;
+          text-decoration: none;
+          font-family: $font-txt;
+          &:hover {
+            color: $yellow;
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: $yellow;
+            transition: width 0.3s;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+          @include mq(0, 600px) {
+            font-size: 14px;
+            letter-spacing: 0.03em;
+          }
+        }
+      }
+    }
+  }
+  .card {
+    background: $yellow;
+    border-radius: 3px;
+    width: 201px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    right: -18px;
+    transform: skew(-35deg, 0deg);
+    .Y-icon {
+      background: $white;
+      border-radius: 3px;
+      display: inline-block;
+      width: 60px;
+      height: 35.87px;
+      text-align: center;
+      padding: 8px;
+      position: absolute;
+      left: -5px;
+      top: 7.5px;
+      img {
+        width: 20px;
+        height: 20px;
+        transform: skew(35deg, 0deg);
+      }
+    }
+    p {
+      color: $red;
+      font-size: 17px;
+      font-weight: bold;
+      font-family: $font-btn;
+      line-height: 3;
+      text-align: right;
+      padding-right: 25px;
+      transform: skew(35deg, 0deg);
+    }
+  }
+}

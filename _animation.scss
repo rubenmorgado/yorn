@@ -1,0 +1,53 @@
+.xs {
+  width: 100%;
+  display: block;
+  position: absolute;
+  border-top: $yellow solid 4px;
+  text-align: center;
+  animation: line 1s linear forwards;
+}
+
+@keyframes line {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 66px;
+  }
+}
+
+.xm {
+  width: 100%;
+  display: block;
+  position: absolute;
+  border-top: $yellow solid 4px;
+  text-align: center;
+  animation: line2 1s linear forwards;
+}
+
+@keyframes line2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 156px;
+  }
+}
+
+.xl {
+  width: 296px;
+  display: block;
+  position: absolute;
+  border-top: $yellow solid 4px;
+  text-align: center;
+  animation: line3 1s linear forwards;
+}
+
+@keyframes line3 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 296px;
+  }
+}

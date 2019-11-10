@@ -1,0 +1,23 @@
+.hero {
+  padding: 90px 0px;
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  @include mq(0, 768px) {
+    display: none;
+  }
+}
+
+.heromobile {
+  width: 100%;
+  display: none;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  @include mq(0, 768px) {
+    display: block;
+  }
+}

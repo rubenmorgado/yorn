@@ -1,0 +1,63 @@
+.color {
+  background: linear-gradient(179deg, #ce0038 16%, #bf0033 44%, #aa002b 64%);
+  padding: 80px 0px;
+}
+.videos {
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+
+  h1 {
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 115%;
+    text-align: center;
+    margin-top: 40px;
+  }
+  h2 {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 115%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  img {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+  @include mq(0, 768px) {
+    display: none;
+  }
+}
+
+.videosmobile {
+  width: 60%;
+  margin: 0 auto;
+  display: none;
+  h1 {
+    font-family: $font-txt;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+  }
+  h2 {
+    font-family: $font-txt;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+  @include mq(0, 768px) {
+    display: block;
+  }
+}

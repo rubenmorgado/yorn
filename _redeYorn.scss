@@ -1,0 +1,125 @@
+.dados {
+  width: 100%;
+  position: relative;
+  article {
+    max-width: 1300px;
+    margin: 120px auto 60px auto;
+    text-align: center;
+    h1 {
+      font-size: 42px;
+      font-family: $font-txt;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 40px;
+      font-family: $font-txt;
+      font-style: italic;
+    }
+    ul {
+      margin: 48px auto;
+      text-align: center;
+      max-width: 900px;
+      padding-left: 20px;
+      li {
+        display: inline-block;
+        margin-right: 31px;
+        text-align: center;
+        border-radius: 6px;
+        border: 1px solid $red;
+        padding: 10px 20px;
+        &:hover {
+          border: 2px solid $red;
+        }
+        @include mq(0, 600px) {
+          margin-bottom: 30px;
+        }
+        a {
+          text-decoration: none;
+          font-family: $font-txt;
+          color: $red;
+          font-size: 22px;
+          &:hover {
+            font-weight: bold;
+            box-shadow: rgba(206, 0, 56, 0.3);
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+  .velocidadeRede {
+    border-left: thin solid $red;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 20px;
+    text-align: left;
+    @include mq(0, 600px) {
+      padding-left: 15px;
+    }
+    .redes {
+      max-width: 600px;
+      .rede {
+        max-width: 390px;
+        margin-bottom: 30px;
+        border: thin solid #eee;
+        border-radius: 5px;
+        padding: 9px;
+        font-family: $font-txt;
+        font-size: 18px;
+        &.redeYorn {
+          max-width: 360px;
+          border: thin solid #eee;
+          background-color: $red;
+          color: $white;
+          display: inline-block;
+          padding-right: 241px;
+          @include mq(0, 600px) {
+            padding-right: 151px;
+          }
+        }
+        &.outraRede {
+          max-width: 205px;
+          background-color: #eee;
+          color: $white;
+          @include mq(0, 600px) {
+            max-width: 139px;
+          }
+        }
+        &.outraRede2 {
+          max-width: 260px;
+          background-color: #eee;
+          color: $white;
+          @include mq(0, 600px) {
+            max-width: 200px;
+          }
+        }
+      }
+    }
+    .icons {
+      display: inline-block;
+      max-width: 80px;
+      margin-left: 10px;
+      img {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .dados {
+    font-family: $font-txt;
+    font-size: 21px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 0px 50px 9px;
+    @include mq(0, 600px) {
+      margin-bottom: 50px;
+    }
+    span {
+      font-weight: bold;
+    }
+  }
+}

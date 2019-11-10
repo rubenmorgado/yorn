@@ -1,0 +1,24 @@
+//fonts
+$font-txt: "Roboto", sans-serif;
+$font-btn: "Open Sans", sans-serif;
+//styles
+$white: #ffffff;
+$darkblue: #060030;
+$yellow: #ffec00;
+$red: #ce0038;
+$darkred: #af002c;
+
+*:focus {
+  outline: 0;
+}
+
+@import "mixin";
+@import "reset";
+@import "menu";
+@import "destaques";
+@import "redeYorn";
+@import "tarifarios";
+@import "animation";
+@import "slider";
+@import "dots";
+@import "videos";
